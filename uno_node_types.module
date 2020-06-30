@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains uno_node_types.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uno_node_types_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uno_node_types module.
+    case 'help.page.uno_node_types':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Placeholder module to create the necessary node types.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

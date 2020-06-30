@@ -1,0 +1,5 @@
+name: 'uno node types'
+type: module
+description: 'Placeholder module to create the necessary node types.'
+core: 8.x
+package: 'Custom'
